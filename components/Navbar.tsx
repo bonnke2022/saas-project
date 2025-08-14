@@ -32,11 +32,15 @@ const Navbar = () => {
         <SignedIn>
           <UserButton afterSwitchSessionUrl="/" />
         </SignedIn>
+
         <Sheet>
           <SheetTrigger className="lg:hidden">
             <Menu className="w-8 h-6" />
           </SheetTrigger>
-          <SheetContent className="flex flex-col items-start gap-18 p-6 lg:hidden">
+          <SheetContent
+            aria-describedby={undefined}
+            className="flex flex-col items-start gap-18 p-6 lg:hidden"
+          >
             <SheetTitle>
               <Link href="/">
                 <div className="flex items-center gap-2.5 cursor-pointer">
